@@ -1,15 +1,58 @@
 @charset "utf-8";
 
-*{margin: 0; padding: 0;}
-ul,ol{list-style: none}
+*{margin: 0; padding: 0; font-family: "맑은 고딕";}
+ul,ol{list-style: none;}
 .clearfix::after, .clearfix::before{
 	content: "";
 	display: block;
 	clear: both;
 }
-
+body{
+	width: 1000px;
+	background-color: #fff;
+	font-size: 18px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	display: block;
+}
 #header{
-	
-	background: #fff;
-	
+	float: left;
+}
+.top{
+	float: left;
+	height: 650px;
+	width: 200px;
+}
+.logo{
+	float: left;
+	height: 650px;
+	width: 200px;
+}
+.menu{
+	width: 180px;
+	position: absolute;
+	top: 80px;
+	text-align: center;	
+}
+
+.nav>li{
+	float: left;
+	width: 180px;
+}
+
+.navi>li>a{
+	height: 40px;
+	width: 180px;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #000;
+	color: #fff;
+}
+
+.navi>li>a:hover{
+	background: #930930;
+	color: #ffff00;
 }
